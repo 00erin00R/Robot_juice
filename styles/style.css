@@ -1,45 +1,115 @@
-*{background-color: lightgray;}
+body {
+    background-color: lightgray;
+    margin: 0;
+}
 
-.container{
+/* Variables */
+:root {
+    --robot-font-size: 62px;  
+    --robot-min-size: 32px;    
+    --tagline-min-size: 11px;  
+    --logo-min-width: 262px;     
+}
+
+/* Grid container */
+.container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto;
+    border-bottom: 1px solid #ccc;
 }
 
-#logo{
-    font-family: "Damion", cursive;
-    width: 262px;
-    font-weight: bold;
-    font-style: normal;
+/* Logo */
+#logo {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    min-width: var(--logo-min-width);
+    padding: 20px 0;
+}
 
+#logo h1 {
     display: flex;
     align-items: baseline;
-    grid-column: 2/3;  
 }
 
-.robot{
+.robot {
+    font-family: "Damion", cursive;
     color: rgb(197, 17, 11);
-    font-size: 32px;
+    font-size: clamp(var(--robot-min-size), 6vw, var(--robot-font-size));
 }
 
-.juice {
-    font-size: 11px;
-    color: black;
+.juice-group {
+    display: flex;
+    flex-direction: column;
     margin-left: 6px;
 }
 
-#headertext{
-    color: rgb(51, 51, 51); 
-    grid-column: 3/4;
+.juice {
+    font-family: "Damion", cursive;
+    font-size: clamp(var(--robot-min-size), 6vw, var(--robot-font-size));
+    color: black;
 }
 
-.nav{
+.tagline {
+    font-size: max(11px, 0.18em);
+    color: rgb(51, 51, 51);
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+/* Navigation */
+.nav {
+    grid-column: 2 / 8;
+    display: flex;
+    align-items: stretch;
+}
+
+/* Nav list */
+.nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav items */
+.nav li {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    
+}
+
+.nav li:first-child {
+    border-left: none;
+}
+
+/* Nav links */
+.nav a {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #999;
+    height: 100%;
+    font-weight: bold;
+}
+
+.nav li.active a {
+    background: #d60000;
+    color: #fff;
+}
+
+/* Hover */
+.nav a:hover {
+    background: #e5e5e5;
+    color: #000;
+}
+
+#banner{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-column: 2/8;
+    width: 100%;
 }
-
-#box1{grid-column: 2;}
-#box2{grid-column: 3;}
-#box3{grid-column: 4;}
-#box4{grid-column: 5;}
-#box5{grid-column: 6;}
-#box6{grid-column: 7;}
