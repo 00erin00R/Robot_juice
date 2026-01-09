@@ -2,6 +2,7 @@ body {
     background-color: lightgray;
     margin: 0;
     font-family: Arial, sans-serif;
+    font-family: 'Iceberg', sans-serif;
 }
 
 :root {
@@ -42,8 +43,9 @@ body {
 }
 
 .nav li {
-    border-left: 1px solid darkslategray;
-    border-top: 1px solid darkslategray;
+    border-left: 1px solid rgb(87, 88, 89);
+    border-top: 1px solid rgb(87, 88, 89);
+    border-bottom: 1px solid rgb(87, 88, 89);
 }
 
 .nav li:first-child {
@@ -78,13 +80,13 @@ body {
 
 h2 {
     text-align: center;
-    border-bottom: 2px solid darkslategray;
+    border-bottom: 2px solid rgb(87, 88, 89);
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
 .img-grid {
-    border-bottom: 2px solid darkslategray;
+    border-bottom: 2px solid rgb(87, 88, 89);
     padding-bottom: 20px;
 }
 
@@ -96,7 +98,7 @@ h2 {
 }
 
 .review-section {
-    border-bottom: 2px solid rgb(51, 51, 51);
+    border-bottom: 2px solid rgb(87, 88, 89);
     padding: 10px 0;
 }
 
@@ -109,22 +111,69 @@ h2 {
     color: red;
 }
 
-footer {
-    background-color: #d60000;
-    color: white;
+.magazine{
+    background-color: whitesmoke;
+    border-bottom: 2px solid rgb(87, 88, 89);
+    color: red;
+    padding: 50px;
+}
+.info{
+    background-color: red;
+}
+
+.main-image img {
+    width: 100%;
+    display: block;
+}
+
+.prod-info h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.prod-info h3 {
+    color: red;
+    margin: 10px 0;
+}
+
+.prod-info select {
+    padding: 8px;
+}
+
+.prod-info input[type="submit"] {
+    background: #c00;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.product{
+    border-bottom: 1px solid rgb(87, 88, 89);
     padding: 10px;
-    font-size: 14px;
 }
 
-.skip-link {
-    position: absolute;
-    left: -9999px;
+.similair{
+    padding: 10px;
+    border-bottom: 1px solid rgb(87, 88, 89);
 }
 
-.skip-link:focus {
-    left: 10px;
-    top: 10px;
-    background: black;
-    color: white;
-    padding: 5px;
+.prod-reviews {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.review {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.review h4 {
+    margin: 0;
+}
+
+.rating {
+    color: #c00;
+    font-weight: bold;
 }

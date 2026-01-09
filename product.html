@@ -7,32 +7,121 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Iceberg&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/grid.css">
     <title>Robot juice</title>
 </head>
-<body>
-        <div class="container">
 
-        <header id="logo">
-            <h1>
-                <span class="robot">Robot</span>
-                <span class="juice-group">
-                    <span class="juice">Juice</span>
-                    <span class="tagline">fictitious cycle lubricants</span>
-                </span>
-            </h1>
+<body>
+    <div class="container">
+        <header class="header">
+             <div class="logo">
+                <h1 class="site-title">
+                    <span class="robot">Robot</span>
+                    <span class="juice-group">
+                        <span class="juice">Juice</span>
+                        <span class="tagline">fictitious cycle lubricants</span>
+                    </span>
+                </h1>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a aria-current="page"  href="product.html">Products</a></li>
+                <li><a href="#">Protect</a></li>
+                <li><a href="#">Stockists</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Reviews</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="product.html">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
+            <main class="prod-content">
+                <section class="product">
+                    <section class="thumbnail">
+                        <img src="robot-juice-images/prod-thumb1.jpg" alt="prod thumb 1">
+                        <img src="robot-juice-images/prod-thumb2.jpg" alt="prod thumb 2">
+                        <img src="robot-juice-images/prod-thumb3.jpg" alt="prod thumb 3">
+                    </section>
 
-    </div>
+                    <section class="main-image">
+                        <img src="robot-juice-images/robotjuicebikeoil.jpg" alt="robot juice bike oil">
+                    </section>
+
+                    <section class="prod-info">
+                            <h1>Bike oil</h1>
+                            <h3>£99.99</h3>
+
+                        <form>
+                            <select name="size" id="size">
+                                <option value="size">Size</option>
+                            </select>
+                            <select name="Qty" id="Qty">
+                                <option value="Qty">Qty</option>
+                            </select>
+
+                            <input type="submit" value="Buy Now">
+                        </form>
+
+                        <h4>FIND NEAREST STOCKLIST <span><img src="robot-juice-images/email.jpg" alt="email"></span> <span><img src="robot-juice-images/facebook.jpg" alt="facebook"></span></h4>
+                        
+                        <p>Robot Juice bike oil stops rust and other corrosion from starting.
+                            Applied to already corroding metals it breaks down the corrosion
+                            and starts preventing it from building up and protects from the point of contact.
+                        </p>
+
+                    </section>
+                </section>
+
+                <section class="similair">
+                    <img src="robot-juice-images/simprod.jpg" alt="simprod1">
+                    <img src="robot-juice-images/simprod.jpg" alt="simprod2">
+                    <img src="robot-juice-images/simprod.jpg" alt="simprod3">
+                    <img src="robot-juice-images/simprod.jpg" alt="simprod4">
+                    <img src="robot-juice-images/simprod.jpg" alt="simprod5">
+                    <img src="robot-juice-images/simprod.jpg" alt="simprod6">
+                </section>
+
+                <section class="prod-reviews">
+                    <h2>Customer Reviews</h2>
+                    <div id="reviews-list"></div>
+                </section>
+            </main>
+
+        <footer class="footer">
+            <section class="magazine">
+                <img src="robot-juice-images/cyclemagazine.jpg" alt="Cycle magazine" id="magazine">
+
+                    <article class="reviews">
+                        <h3>Latest Reviews</h3>
+                        <p>Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants.
+                        Robot Juice Dry lube was rated the highest out of over 40 top brand dry lubs.
+                        </p>
+                    </article>
+
+                    <article class="links">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="#">Edge Hill University</a></li>
+                            <li><a href="#">Dave Walsh</a></li>
+                            <li><a href="#">https://twitter.com/walsh_d</a></li>
+                            <li><a href="#">CIS110 - Web Design and Development module</a></li>
+                        </ul>
+                    </article>
+
+            </section>
+            <section class="info">
+                <p>Robot Juice Fictitious Products Not Ltd.,Unit 9 3/4, Privet Drive, Little Whingeing, Surrey DN18 5RP</p>
+                <p>Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk</p>
+
+                <p>Contact Us | Privacy | Terms & Conditions | Accessibility</p>
+                <p>Copyright 2018 Dave Walsh. Design by Dave Walsh</p>
+            </section>
+        </footer>
+    </div>    
+
+<script src="reviews.js"></script>
 </body>
-</html>>
+</html>
