@@ -1,0 +1,95 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+#logo {
+    grid-column: 2 / 4;
+}
+
+#logo h1 {
+    display: flex;
+    align-items: baseline;
+}
+
+.juice-group {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    grid-column: 2 / 8;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+}
+
+.nav li {
+    flex: 1;
+}
+
+.nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    gap: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.section {
+    grid-column: 2 / 8;
+}
+
+.banner {
+    width: 100%;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.review-section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+#news{
+    grid-column: 1/6;
+}
+#poll{
+    grid-column: 6/9;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
